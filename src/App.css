@@ -1,22 +1,142 @@
-.App {
-  text-align: center;
+/* color:#CC3534 */
+/* color: #09d3ac; */
+.chrome-ext-app {
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
+.chrome-ext-wrapper {
+  width:100%;
+  max-width:500px;
+  margin:0 auto;
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.chrome-ext-wrapper .header {
+  color:#cc3534;
+  margin:0 0 2rem;
+  padding:0;
+  font-size:2.5rem;
+  text-align:left;
+}
+
+.chrome-ext-wrapper form {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  flex-flow:row nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  position: relative;
 }
 
-.App-link {
-  color: #09d3ac;
+.chrome-ext-wrapper .form-input {
+  appearance: none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  border:none;
+  height:4rem;
+  min-width:12rem;
+  font-size:2.4rem;
+  background-color:transparent;
+  color:#ffffff;
+  border-bottom:1px solid #ffffff;
+  flex-grow:2;
+  padding-right:4rem;
+}
+
+.chrome-ext-wrapper .form-input:focus {
+  outline:0;
+}
+
+.chrome-ext-wrapper .form-button {
+  appearance: none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  font-size:2rem;
+  background-color:transparent;
+  border:none;
+  position:absolute;
+  right:0;
+  cursor:pointer;
+}
+
+.chrome-ext-wrapper .form-button:focus {
+  outline:0;
+}
+
+.chrome-ext-wrapper .form-button img {
+  height:2rem;
+  width:2rem;
+}
+
+.chrome-ext-wrapper .results {
+  padding:2rem 0;
+}
+
+.chrome-ext-wrapper .results ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.chrome-ext-wrapper .results li {
+  margin-bottom:2rem;
+  font-size:2rem;
+  background-color:#474747;
+  padding:1rem;
+  color:#61dbfb;
+}
+
+.chrome-ext-wrapper .results li a {
+  text-decoration:none;
+}
+
+.chrome-ext-wrapper .results li .package-name-link {
+  color:#61dbfb;
+}
+
+.chrome-ext-wrapper .description {
+  font-size:1.6rem;
+  color:#ffffff;
+  padding:1rem;
+}
+
+.chrome-ext-wrapper .tag-container {
+  margin-bottom:1rem;
+}
+
+.chrome-ext-wrapper .tag-container .tag {
+  font-size:1.4rem;
+  padding:0.5rem;
+  background-color:#5b5b5b;
+  margin-right:1rem;
+  display:inline-block;
+}
+
+.chrome-ext-wrapper .tag-container .tag:last-child {
+  margin-right:0;
+}
+
+.chrome-ext-wrapper .results .btn {
+  text-decoration:none;
+	color:#ffffff;
+	font-size:1.2rem;
+	font-weight:bold;
+	padding:1rem;
+	display:inline-block;
+	text-align:center;
+  background-color:#333333;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  margin-right:1rem;
+}
+
+.chrome-ext-wrapper .results .btn:last-child {
+  margin-right:0;
+}
+
+.chrome-ext-wrapper .results .btn:hover {
+  background-color:#cc3534;
 }
